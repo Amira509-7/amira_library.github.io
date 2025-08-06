@@ -1,0 +1,152 @@
+body {
+    font-family: 'Arial', sans-serif;
+   
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    
+  }
+
+  .books-1984{
+    background-image: url("gallery/pexels-diimejii-2908773.jpg");
+
+
+  }
+
+  .back-home{
+    font-size: 25px;        /* يكبر النص */
+    padding: 12px 24px;     /* يزيد حجم الزر */
+    /* يجعل الزوايا ناعمة */
+   
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+
+  }
+
+  .back-button:hover {
+    transform: scale(1.05);  /* يكبر شوي عند التمرير */
+  }
+
+
+  .book-details {
+    position: relative; /* مهم عشان الزر يكون داخل هذا العنصر */
+  }
+  
+  .back-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-decoration: none;
+    font-size: 24px;
+    background-color: #ffffffcc; /* أبيض شفاف */
+    padding: 6px 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    color: #333;
+    transition: background-color 0.3s;
+  }
+  
+  .back-btn:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .book-details {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    gap: 20px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7); /* أبيض شفاف */
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .book-details img {
+    max-width: 140px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .book-info {
+    max-width: 600px;
+  }
+  
+  .book-info h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    animation: pulse 2s infinite;
+  }
+  
+  .book-info .description {
+    font-size: 1.1rem;
+    margin-top: 15px;
+  }
+  
+  .quotes-section {
+    padding: 30px 40px;
+    background-color: #fafafa;
+    border-top: 1px solid #ddd;
+  }
+  
+  .quotes-section h2 {
+    font-size: 1.6rem;
+    color: #6d4c41;
+    margin-bottom: 20px;
+  }
+  
+  blockquote {
+    font-style: italic;
+    background-color: #fff8e1;
+    border-left: 5px solid #ffb300;
+    margin: 10px 0;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  /* نبض للعنوان */
+  @keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.6; }
+    100% { opacity: 1; }
+  }
+
+
+  .image-row {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding: 10px;
+  }
+  
+  .image-row img {
+    width: 250px;
+    border-radius: 10px;
+    flex-shrink: 0; /* عشان ما تصغر الصور */
+  }
+
+  .book-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap; /* أهم شي: لا يلف الصور لسطر جديد */
+    overflow-x: auto; /* يخلي في سحب لو صارت الشاشة ضيقة */
+    padding: 20px;
+  }
+  
+  .book-images img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    flex-shrink: 0; /* لا تخلي الصورة تصغر نفسها */
+  }
+  
+  

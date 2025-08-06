@@ -1,0 +1,99 @@
+body{
+   
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    height: 100vh;
+ }
+ .books-page{
+    background-image: url('gallery/pexels-technobulka-2908984.jpg');
+ }
+  
+
+
+
+.home-link {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .books-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 بطاقات في الصف */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .book-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 16px;
+    text-align: center;
+    width: 220px;
+    margin: 16px;
+    transition: transform 5ms;
+    animation-name: glow;
+  }
+  
+  .book-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px #a49472;
+
+  }
+  @keyframes glow{
+ 50%{box-shadow: 0px 0px 0px #fff;}
+  }
+  
+  .book-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .book-card h3 {
+    margin-top: 12px;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .details-link {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+  }
+
+  .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 90vh;
+  }
+  h1 {
+    color: antiquewhite;
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.05);
+      opacity: 0.8;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }

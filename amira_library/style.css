@@ -1,0 +1,107 @@
+body {
+  background-image: url('gallery/pexels-pixabay-415071.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+
+  color: #333;
+  text-align: center;
+  margin: 0;
+
+  font-family: 'Quicksand', sans-serif;
+}
+
+.landing {
+  text-align: center;
+  padding: 100px 20px;
+  flex: 1;
+}
+
+.landing h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.landing p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #ffb6b9;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffa3a7;
+}
+
+:root {
+  --main-bg: #fdf6f0;
+  --primary-color: #d9a7c7;
+  --accent-color: #fbc2eb;
+  --text-color: #333;
+}
+
+.book-card {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin: 20px auto;
+  max-width: 90%;
+}
+
+.book-card:hover {
+  transform: scale(1.05);
+}
+
+.footer {
+  background-color: #3333339d;
+  color: #fdfdfd;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  position: relative;
+  left: 0;
+}
+
+.footer a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* ✅ تحسين العرض على الجوال */
+@media (max-width: 768px) {
+  .landing {
+    padding: 60px 15px;
+  }
+
+  .landing h1 {
+    font-size: 32px;
+  }
+
+  .landing p {
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .book-card {
+    padding: 15px;
+  }
+}
